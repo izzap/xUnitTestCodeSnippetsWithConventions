@@ -1,19 +1,13 @@
 # xUnit Test Code Snippets
 
+
 ## Summary
 
 This is "code snippets" for Microsoft Visual Studio 2012 or higher.
 
-If you use these "code snippets", you can save time to coding/typing to create unit test code based on xUnit framework.
-
-![introduce movie](https://raw.githubusercontent.com/jsakamoto/xUnitTestCodeSnippets/master/.assets/movie-001.gif)
+Is based on [jsakamoto](https://github.com/jsakamoto/xUnitTestCodeSnippets) xUnintTestCodeSnippets project. Adding naming convention to test methods and arrange, act, assert test body
 
 ## How to install
-
-1. Download "xUnitTestCodeSnippets... .vsix" (Microsoft Visual Studio Extension) file from "Visual Studio Gallery" site.  
-URL: [https://visualstudiogallery.msdn.microsoft.com/032cd260-d4cd-4849-adff-648ea9a28265](https://visualstudiogallery.msdn.microsoft.com/032cd260-d4cd-4849-adff-648ea9a28265)
-2. Open (double click on Explorer) the downloaded "xUnitTestCodeSnippets... .vsix" file.
-3. Then, "VSIX Installer" was launched. Please click "Install".
 
 ## How to use
 
@@ -29,9 +23,14 @@ Then, this snippet expanded following C# code.
 
 ```csharp
 [Fact]
-public void MyTestMethod()
+public void MethodName_StateUnderTest_ExpectedBehavior()
 {
+    //arrange
     throw new NotImplementedException();
+
+    //act
+
+    //assert
 }
 ```
 
@@ -41,9 +40,14 @@ public void MyTestMethod()
 
 ```csharp
 [Fact(DisplayName = "")]
-public void MyTestMethod()
+public void MethodName_StateUnderTest_ExpectedBehavior()
 {
+    //arrange
     throw new NotImplementedException();
+
+    //act
+
+    //assert
 }
 ```
 
@@ -60,7 +64,12 @@ Then, this snippet expanded following C# code.
 [Theory]
 public void MyTheory()
 {
+    //arrange
     throw new NotImplementedException();
+
+    //act
+
+    //assert
 }
 ```
 

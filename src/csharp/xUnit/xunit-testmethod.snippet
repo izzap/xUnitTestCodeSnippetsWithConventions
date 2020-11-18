@@ -8,7 +8,7 @@
       <Title>xUnit Class</Title>
       <Shortcut>xtestc</Shortcut>
       <Description>Code snippet for an xUnit test class with a fact</Description>
-      <Author>Nate Barbettini</Author>
+      <Author>Daniel Juhl Christoffersen</Author>
     </Header>
     <Snippet>
       <Imports>
@@ -28,7 +28,7 @@
         <Literal>
           <ID>methodName</ID>
           <ToolTip>Replace with the name of the test method</ToolTip>
-          <Default>MyTestMethod</Default>
+          <Default>MethodName_StateUnderTest_ExpectedBehavior</Default>
         </Literal>
         <Literal>
           <ID>content</ID>
@@ -42,7 +42,12 @@
           [Fact]
           public void $methodName$()
           {
+              //arrange
               $content$$end$
+
+              //act
+
+              //assert              
           }
         }]]>
       </Code>
@@ -57,7 +62,7 @@
       <Title>xUnit Test Method</Title>
       <Shortcut>xtestm</Shortcut>
       <Description>Code snippet for a xUnit test method</Description>
-      <Author>J.Sakamoto</Author>
+      <Author>Daniel Juhl Christoffersen</Author>
     </Header>
     <Snippet>
       <Imports>
@@ -72,7 +77,7 @@
         <Literal>
           <ID>name</ID>
           <ToolTip>Replace with the name of the test method</ToolTip>
-          <Default>MyTestMethod</Default>
+          <Default>MethodName_StateUnderTest_ExpectedBehavior</Default>
         </Literal>
         <Literal>
           <ID>content</ID>
@@ -84,7 +89,12 @@
         <![CDATA[[Fact]
       public void $name$()
       {
+          //arrange
           $content$$end$
+
+          //act
+
+          //assert  
       }]]>
       </Code>
     </Snippet>
@@ -98,7 +108,7 @@
       <Title>xUnit Fact</Title>
       <Shortcut>fact</Shortcut>
       <Description>Code snippet for an xUnit test fact</Description>
-      <Author>J.Sakamoto</Author>
+      <Author>Daniel Juhl Christoffersen</Author>
     </Header>
     <Snippet>
       <Imports>
@@ -113,7 +123,7 @@
         <Literal>
           <ID>name</ID>
           <ToolTip>Replace with the name of the fact method</ToolTip>
-          <Default>MyTestMethod</Default>
+          <Default>MethodName_StateUnderTest_ExpectedBehavior</Default>
         </Literal>
         <Literal>
           <ID>content</ID>
@@ -125,7 +135,13 @@
         <![CDATA[[Fact]
       public void $name$()
       {
+          //arrange
           $content$$end$
+
+          //act
+
+          //assert  
+
       }]]>
       </Code>
     </Snippet>
@@ -139,7 +155,7 @@
       <Title>xUnit Fact with DisplayName</Title>
       <Shortcut>dfact</Shortcut>
       <Description>Code snippet for an xUnit test fact with display name</Description>
-      <Author>J.Sakamoto</Author>
+      <Author>Daniel Juhl Christoffersen</Author>
     </Header>
     <Snippet>
       <Imports>
@@ -159,7 +175,7 @@
         <Literal>
           <ID>name</ID>
           <ToolTip>Replace with the name of the fact method</ToolTip>
-          <Default>MyTestMethod</Default>
+          <Default>MethodName_StateUnderTest_ExpectedBehavior</Default>
         </Literal>
         <Literal>
           <ID>content</ID>
@@ -171,7 +187,12 @@
         <![CDATA[[Fact(DisplayName = "$displayname$")]
       public void $name$()
       {
+          //arrange
           $content$$end$
+
+          //act
+
+          //assert 
       }]]>
       </Code>
     </Snippet>
@@ -185,7 +206,7 @@
       <Title>xUnit Asynchronous Fact</Title>
       <Shortcut>afact</Shortcut>
       <Description>Code snippet for an asynchronous xUnit test fact</Description>
-      <Author>Nate Barbettini</Author>
+      <Author>Daniel Juhl Christoffersen</Author>
     </Header>
     <Snippet>
       <Imports>
@@ -203,7 +224,7 @@
         <Literal>
           <ID>name</ID>
           <ToolTip>Replace with the name of the fact method</ToolTip>
-          <Default>MyTestMethodAsync</Default>
+          <Default>MethodName_StateUnderTest_ExpectedBehavior_Async</Default>
         </Literal>
         <Literal>
           <ID>content</ID>
@@ -215,7 +236,12 @@
         <![CDATA[[Fact]
       public async Task $name$()
       {
+          //arrange
           $content$$end$
+
+          //act
+
+          //assert 
       }]]>
       </Code>
     </Snippet>
@@ -229,7 +255,7 @@
       <Title>xUnit Asynchronous Fact with DisplayName</Title>
       <Shortcut>dafact</Shortcut>
       <Description>Code snippet for an asynchronous xUnit test fact with display name</Description>
-      <Author>Nate Barbettini, J.Sakamoto</Author>
+      <Author>Daniel Juhl Christoffersen</Author>
     </Header>
     <Snippet>
       <Imports>
@@ -252,7 +278,7 @@
         <Literal>
           <ID>name</ID>
           <ToolTip>Replace with the name of the fact method</ToolTip>
-          <Default>MyTestMethodAsync</Default>
+          <Default>MethodName_StateUnderTest_ExpectedBehavior_Async</Default>
         </Literal>
         <Literal>
           <ID>content</ID>
@@ -264,7 +290,12 @@
         <![CDATA[[Fact(DisplayName = "$displayname$")]
       public async Task $name$()
       {
+          //arrange
           $content$$end$
+
+          //act
+
+          //assert 
       }]]>
       </Code>
     </Snippet>
@@ -278,7 +309,7 @@
       <Title>xUnit Theory</Title>
       <Shortcut>theory</Shortcut>
       <Description>Code snippet for an xUnit test theory</Description>
-      <Author>Nate Barbettini</Author>
+      <Author>Daniel Juhl Christoffersen</Author>
     </Header>
     <Snippet>
       <Imports>
@@ -305,7 +336,12 @@
         <![CDATA[[Theory]
       public void $name$()
       {
-          $content$$end$
+        //arrange
+        $content$$end$
+
+        //act
+
+        //assert 
       }]]>
       </Code>
     </Snippet>
@@ -319,7 +355,7 @@
       <Title>xUnit Theory with DisplayName</Title>
       <Shortcut>dtheory</Shortcut>
       <Description>Code snippet for an xUnit test theory with display name</Description>
-      <Author>Nate Barbettini, J.Sakamoto</Author>
+      <Author>Daniel Juhl Christoffersen</Author>
     </Header>
     <Snippet>
       <Imports>
@@ -351,7 +387,12 @@
         <![CDATA[[Theory(DisplayName = "$displayname$")]
       public void $name$()
       {
-          $content$$end$
+        //arrange
+        $content$$end$
+
+        //act
+
+        //assert 
       }]]>
       </Code>
     </Snippet>
@@ -365,7 +406,7 @@
       <Title>xUnit Asynchronous Theory</Title>
       <Shortcut>atheory</Shortcut>
       <Description>Code snippet for an asynchronous xUnit test theory</Description>
-      <Author>Nate Barbettini</Author>
+      <Author>Daniel Juhl Christoffersen</Author>
     </Header>
     <Snippet>
       <Imports>
@@ -395,7 +436,12 @@
         <![CDATA[[Theory]
       public async Task $name$()
       {
-          $content$$end$
+        //arrange
+        $content$$end$
+
+        //act
+
+        //assert 
       }]]>
       </Code>
     </Snippet>
@@ -409,7 +455,7 @@
       <Title>xUnit Asynchronous Theory with DisplayName</Title>
       <Shortcut>datheory</Shortcut>
       <Description>Code snippet for an asynchronous xUnit test theory with display name</Description>
-      <Author>Nate Barbettini</Author>
+      <Author>Daniel Juhl Christoffersen</Author>
     </Header>
     <Snippet>
       <Imports>
@@ -444,7 +490,12 @@
         <![CDATA[[Theory(DisplayName = "$displayname$")]
       public async Task $name$()
       {
-          $content$$end$
+        //arrange
+        $content$$end$
+
+        //act
+
+        //assert 
       }]]>
       </Code>
     </Snippet>

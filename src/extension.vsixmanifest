@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Version="1.5.1.1" Id="d2c46d8d-a104-444a-a1ae-bf620debd2a5" Language="en-US" Publisher="J.Sakamoto" />
+    <Identity Version="0.1.0.0" Id="68923AAB-67DB-49BB-9B69-0CE2DCB0F5AE" Language="en-US" Publisher="izzap" />
     <DisplayName>xUnit Code Snippets</DisplayName>
-    <Description xml:space="preserve">Code snippets for xUnit test method.</Description>
-    <MoreInfo>https://github.com/jsakamoto/xUnitTestCodeSnippets/</MoreInfo>
-    <!-- <GettingStartedGuide>https://github.com/jsakamoto/...</GettingStartedGuide> -->
-    <ReleaseNotes>https://github.com/jsakamoto/xUnitTestCodeSnippets/blob/master/README.md#release-note</ReleaseNotes>
+    <Description xml:space="preserve">Code snippets for xUnit test method with test naming convention.</Description>
+    <MoreInfo>https://github.com/izzap/xUnitTestCodeSnippetsWithConventions</MoreInfo>
+    <ReleaseNotes>https://github.com/izzap/xUnitTestCodeSnippetsWithConventions/blob/master/README.md#release-note</ReleaseNotes>
     <Icon>icon.png</Icon>
-    <!-- <PreviewImage>preview.png</PreviewImage> -->
     <Tags>xunit, Unit Testing, TDD, snippet, snippets, code snippets</Tags>
   </Metadata>
   <Installation>
